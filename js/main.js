@@ -7,7 +7,7 @@
  var rotateArr = [function rotateTop(){$(".decorateTop").addClass("on")},function rotateBottom(){$(".decorateBottom").addClass("on")}];
  var removeRotate = [function removeTop(){$(".decorateTop").removeClass("on")},function removeTop(){$(".decorateBottom").removeClass("on")}]
  var fiaarr = [function homecontent() {$('#myTab a:last').tab('show').parents().siblings().find(".homecontent").animate({ "bottom": 121 });}, function() {
-    $(".text").fadeIn(200)}];
+    $(".text").fadeIn(500)}];
  var fioarr = [function homecontent() {$('#myTab a:last').tab('show').parents().siblings().find(".homecontent").animate({ "bottom": 0 })
  }, function text() {$(".text").css({ "top": 180, "display": "none" }) }];
  
