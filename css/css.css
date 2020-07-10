@@ -135,7 +135,7 @@ body {
   display: block;
   text-align: center;
   color: #fff;
-  height: 45px;
+  /* height: 45px; */
 }
 .tab_content ._active .homecontent span.line1 {
   font-size: 25px;
