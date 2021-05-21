@@ -1,22 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <title>Website of Xyy</title>
-    <link rel="stylesheet" href="lib/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/css.css" />
+    <meta charset="utf-8" />
+    <title>webview</title>
   </head>
-  <script type="text/javascript">
-    document.getElementById("webViewButton").addEventListener("click", () => {
-      window.postMessage("fromHtml");
-    });
-  </script>
   <body>
-    <div id="webViewButton">webview content</div>
+    <button id="myBtn">跳转首页</button>
+    <p id="demo"></p>
+    <script>
+      document.getElementById("myBtn").addEventListener("click", function () {
+        console.log("click");
+        window.postMessage({ route: "homePage" });
+      });
+    </script>
   </body>
-  <script type="text/javascript" src="lib/jquery.min.js"></script>
-  <script type="text/javascript" src="lib/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
-  <script type="text/javascript" src="js/canvas.js"></script>
 </html>
+
 
