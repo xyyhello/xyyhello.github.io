@@ -7,20 +7,16 @@
     <link rel="stylesheet" href="css/css.css" />
   </head>
   <script type="text/javascript">
-    document.oncontextmenu = function () {
-      return false;
-    };
-    window.onkeydown = function (event) {
-      if (event.keyCode == 123) {
-        return false;
-      }
-    };
+    document.getElementById("webViewButton").addEventListener("click", () => {
+      window.postMessage("fromHtml");
+    });
   </script>
   <body>
-    <div class="tab-content tab_content">webview content</div>
+    <div id="webViewButton">webview content</div>
   </body>
   <script type="text/javascript" src="lib/jquery.min.js"></script>
   <script type="text/javascript" src="lib/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript" src="js/canvas.js"></script>
 </html>
+
