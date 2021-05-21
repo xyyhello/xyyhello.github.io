@@ -5,15 +5,17 @@
     <title>webview</title>
   </head>
   <body>
-    <button id="myBtn">跳转首页</button>
+    <button id="myBtn">跳转</button>
     <p id="demo"></p>
     <script>
       document.getElementById("myBtn").addEventListener("click", function () {
         console.log("click");
-        window.postMessage({ route: "homePage" });
+        window.ReactNativeWebView.postMessage(
+          JSON.stringify({
+            route: "homePage",
+          })
+        );
       });
     </script>
   </body>
 </html>
-
-
