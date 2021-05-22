@@ -752,3 +752,6 @@ canvas {
   text-align: center;
   list-style: 60px;
 }
+.color {
+  color: "red";
+}
